@@ -1,171 +1,246 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head> 
-    <!-- Primary Meta Tags -->
-<title>Mercados</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="title" content="Impact - Landing Page">
-
-<!-- Favicon -->
-<link rel="icon" href="./assets/img/favicon/favicon.png" type="image/png">
-
-<!-- Fontawesome -->
-<link type="text/css" href="./vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-<!-- Prism -->
-<link type="text/css" href="./vendor/prismjs/themes/prism.css" rel="stylesheet">
-
-<!-- Front CSS -->
-<link type="text/css" href="./css/front.css" rel="stylesheet">
-    
-    <meta name="application-name" content="Mercados" />
-	<meta name="theme-color" content="#ffffff">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, shrink-to-fit=no">
+    <meta name="description" content="Lista de empresas chapinas">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#100DD1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- evita que se traduzca el contenido de la pagina -->
+    <meta name="google" content="notranslate" />
+    <!-- The above tags *must* come first in the head, any other head content must come *after* these tags-->
+    <!-- Title-->
+    <title>Empresas Chapinas</title>
+    <!-- Favicon-->
+    <link rel="icon" href="./faviconsmall.png">
+    <!-- Apple Touch Icon-->
+    <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png">
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Web App Manifest-->
     <link rel="manifest" href="manifest.json">
-</head>
-
-<body>
-
-<header class="header-global">
-    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg headroom py-lg-3 px-lg-6 navbar-light navbar-theme-primary navbar-fixed">
-        <div class="container">
-            <a class="navbar-brand @@logo_classes" href="./index.html">
-                <img class="navbar-brand-dark common" src="./assets/img/brand/light.svg" height="35" alt="Logo light">
-                <img class="navbar-brand-light common" src="./assets/img/brand/dark.svg" height="35" alt="Logo dark">
-            </a>
-            <!--
-            <div class="navbar-collapse collapse" id="navbar_global">
-                <div class="navbar-collapse-header">
-                    <div class="row">
-                        <div class="col-6 collapse-brand">
-                            <a href="./index.html">
-                                <img src="./assets/img/brand/dark.svg" height="35" alt="Logo Impact">
-                            </a>
-                        </div>
-                        <div class="col-6 collapse-close">
-                            <a href="#navbar_global" role="button" class="fas fa-times" data-toggle="collapse"
-                                data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false"
-                                aria-label="Toggle navigation"></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <ul class="navbar-nav navbar-nav-hover navbar-bottom justify-content-center">
-                    <li class="nav-item">
-                        <a href="./index.html" class="nav-link">Negocios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./index.html" class="nav-link">Directorio</a>
-                    </li>
-                    
-                </ul>
-            
-            </div>
-            -->
-            <!--
-            <div class="d-flex d-lg-none align-items-center">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
-                    aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation"><span
-                        class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            -->
-        </div>
-    </nav>
-</header>
-
-<main>
-
-    <div class="preloader bg-soft flex-column justify-content-center align-items-center">
-        <div class="loader-element">
-            <span class="loader-animated-dot"></span>
-            <img src="./assets/img/brand/dark-loader.svg" height="40" alt="Mercados Logo">
-        </div>
+  </head>
+  <body>
+    <!-- Preloader-->
+    <div class="preloader" id="preloader">
+      <div class="spinner-grow text-secondary" role="status">
+        <div class="sr-only">Loading...</div>
+      </div>
     </div>
-
+    <!-- Header Area-->
+    <div class="header-area" id="headerArea">
+      <div class="container h-100 d-flex align-items-center justify-content-between">
+        <!-- Logo Wrapper-->
+        <div class="logo-wrapper">
+          <a href="index.html">
+            <img src="./faviconsmall.png" alt=""><label class="text-secondary b">Empresas Chapinas</label>
+          </a>
+        </div>
         
-        <section class="section section-lg bg-soft">
-            <div class="container">
-                <div class="row" id="root">
-
-                </div>
-            </div>
-        </section>
-
-        <div id="rootModal"></div>
-
-
-    
-<footer class="footer section pt-6 pt-md-8 pt-lg-10 pb-3 bg-primary text-white overflow-hidden">
-    <div class="pattern pattern-soft top"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 mb-4 mb-lg-0">
-                <a class="footer-brand mr-lg-5 d-flex" href="./index.html">
-                    <img src="./assets/img/brand/light.svg" height="35" class="mr-3" alt="Footer logo">
-                </a>
-                <p class="my-4">Mercados es una plataforma para facilitar el comercio local, comunícate directamente con tu negocio favorito o busca profesionales y servicios varios en nuestro directorio local</p>
-              
-            </div>
-            
-            
-            <div class="col-12 col-sm-6 col-lg-4">
-                <h6>Subscríbete o Sugiérenos un negocio</h6>
-                <p class="font-small">Es gratis</p>
-                <a href="https://api.whatsapp.com/send?phone=50257255092&text=Quiero%20publicar%20mi%20negocio%20en%20Mercados" class="btn btn-success" target="blank">Suscribirme</a>
-                
-            </div>
-        </div>
-        <hr class="my-4 my-lg-5">
-        <div class="row">
-            <div class="col pb-4 mb-md-0">
-                <div class="d-flex text-center justify-content-center align-items-center">
-                    <p class="font-weight-normal mb-0">Creado por Alexis Burgos <span class="current-year"></span>. Todos los derechos reservados.</p>
-                </div>
-            </div>
-        </div>
+        <!-- Navbar Toggler le agregué clase hidden para evitar que se vea -->
+        <div class="suha-navbar-toggler d-flex flex-wrap hidden" id="suhaNavbarToggler"><span></span><span></span><span></span></div>
+      </div>
     </div>
-</footer>
+    <!-- Sidenav Black Overlay-->
+    <div class="sidenav-black-overlay"></div>
+    <!-- Side Nav Wrapper-->
+    <div class="suha-sidenav-wrapper" id="sidenavWrapper">
+      <!-- Sidenav Profile-->
+      <div class="sidenav-profile">
+        <div class="user-profile"><img src="img/bg-img/9.jpg" alt=""></div>
 
-    </main>
+        <div class="user-info">
+          <h6 class="user-name mb-0">Suha Jannat</h6>
+          <p class="available-balance">Balance <span>$<span class="counter">523.98</span></span></p>
+        </div>
+      </div>
 
-    <!-- Core -->
-<script src="./vendor/jquery/dist/jquery.min.js"></script>
-<script src="./vendor/popper.js/dist/umd/popper.min.js"></script>
-<script src="./vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="./vendor/headroom.js/dist/headroom.min.js"></script>
+      <!-- Sidenav Nav-->
+      <ul class="sidenav-nav pl-0">
+        <li><a href="profile.html"><i class="lni lni-user"></i>My Profile</a></li>
+        <li><a href="notifications.html"><i class="lni lni-alarm lni-tada-effect"></i>Notifications<span class="ml-3 badge badge-warning">3</span></a></li>
+        <li class="suha-dropdown-menu"><a href="#"><i class="lni lni-cart"></i>Shop Pages</a>
+          <ul>
+            <li><a href="shop-grid.html">- Shop Grid</a></li>
+            <li><a href="shop-list.html">- Shop List</a></li>
+            <li><a href="single-product.html">- Product Details</a></li>
+            <li><a href="featured-products.html">- Featured Products</a></li>
+            <li><a href="flash-sale.html">- Flash Sale</a></li>
+          </ul>
+        </li>
+        <li><a href="pages.html"><i class="lni lni-empty-file"></i>All Pages</a></li>
+        <li class="suha-dropdown-menu"><a href="wishlist-grid.html"><i class="lni lni-heart"></i>My Wishlist</a>
+          <ul>
+            <li><a href="wishlist-grid.html">- Wishlist Grid</a></li>
+            <li><a href="wishlist-list.html">- Wishlist List</a></li>
+          </ul>
+        </li>
+        <li><a href="settings.html"><i class="lni lni-cog"></i>Settings</a></li>
+        <li><a href="intro.html"><i class="lni lni-power-switch"></i>Sign Out</a></li>
+      </ul>
+      <!-- Go Back Button-->
+      <div class="go-home-btn" id="goHomeBtn"><i class="lni lni-arrow-left"></i></div>
+    </div>
 
-<script src="./vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-<script src="./vendor/jarallax/dist/jarallax.min.js"></script>
-
-<script src="./vendor/axios.min.js"></script>
-<script src="./vendor/socket.io.js"></script>
-
-
-
-<!-- Vendor JS 
-<script src="./vendor/onscreen/dist/on-screen.umd.min.js"></script>
-<script src="./vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+    <!-- PWA Install Alert-->
+    <div class="toast pwa-install-alert shadow hidden" id="pwaInstallToast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="8000" data-autohide="true">
+      <div class="toast-body">
+        <button class="ml-3 close" type="button" data-dismiss="toast" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="content d-flex align-items-center mb-2"><img src="img/icons/icon-72x72.png" alt="">
+          <h6 class="mb-0 text-white">Add to Home Screen</h6>
+        </div><span class="mb-0 d-block text-white">Add Suha on your mobile home screen. Click the<strong class="mx-1">"Add to Home Screen"</strong>button & enjoy it like a regular app.</span>
+      </div>
+    </div>
 
 
--->
+    <div class="page-content-wrapper">
+      <!-- Hero Slides SLIDES PARA BANNERS DE PROPAGANDA -->
+      <div class="hero-slides owl-carousel">
+        <!-- Single Hero Slide-->
+        <div class="single-hero-slide" style="background-image: url('img/bg-img/1.jpg')">
+          <div class="slide-content h-100 d-flex align-items-center">
+            <div class="container">
+              <h4 class="text-white mb-0" data-animation="fadeInUp" data-delay="100ms" data-wow-duration="1000ms">Electrónica Pérez</h4>
+              <p class="text-white" data-animation="fadeInUp" data-delay="400ms" data-wow-duration="1000ms">Ofertas en artículos 20% descuento</p><a class="btn btn-primary btn-sm" href="#" data-animation="fadeInUp" data-delay="800ms" data-wow-duration="1000ms">Contactar</a>
+            </div>
+          </div>
+        </div>
+        <!-- Single Hero Slide-->
+        <div class="single-hero-slide" style="background-image: url('img/bg-img/2.jpg')">
+          <div class="slide-content h-100 d-flex align-items-center">
+            <div class="container">
+              <h4 class="text-white mb-0" data-animation="fadeInUp" data-delay="100ms" data-wow-duration="1000ms">El Museo</h4>
+              <p class="text-white" data-animation="fadeInUp" data-delay="400ms" data-wow-duration="1000ms">Artículos decorativos</p><a class="btn btn-success btn-sm" href="#" data-animation="fadeInUp" data-delay="500ms" data-wow-duration="1000ms">Contactar</a>
+            </div>
+          </div>
+        </div>
+        <!-- Single Hero Slide-->
+        <div class="single-hero-slide" style="background-image: url('img/bg-img/3.jpg')">
+          <div class="slide-content h-100 d-flex align-items-center">
+            <div class="container">
+              <h4 class="text-white mb-0" data-animation="fadeInUp" data-delay="100ms" data-wow-duration="1000ms">Veterinaria Cat & Dog</h4>
+              <p class="text-white" data-animation="fadeInUp" data-delay="400ms" data-wow-duration="1000ms">5 años consintiendo a tu mascota</p><a class="btn btn-danger btn-sm" href="#" data-animation="fadeInUp" data-delay="800ms" data-wow-duration="1000ms">Contactar</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<!-- Place this tag in your head or just before your close body tag. 
-<script async defer src="https://buttons.github.io/buttons.js"></script>
--->
 
-<!-- Impact JS -->
-<script src="./assets/js/front.js"></script>
+      <!-- Product Catagories-->
+      <div class="product-catagories-wrapper py-3">
+        <div class="container">
+          <div class="section-heading">
+            <h6 class="ml-1">Elija la categoría del negocio</h6>
+          </div>
+          <div class="product-catagory-wrap">
+            <div class="row g-3">
 
-<script src="./data.js"></script>
-<script src="./index.js"></script>
+              <!-- Single Catagory Card-->
+              <div class="col-4">
+                <div class="card catagory-card" onclick="getEmpresasCategoria('comida')">
+                  <div class="card-body"><a href="#"><i class="lni lni-pizza"></i><span>Comida</span></a></div>
+                </div>
+              </div>
+
+              <!-- Single Catagory Card-->
+              <div class="col-4">
+                <div class="card catagory-card" onclick="getEmpresasCategoria('belleza')">
+                  <div class="card-body"><a href="#"><i class="lni lni-heart"></i><span>Salón Belleza</span></a></div>
+                </div>
+              </div>
+
+              <!-- Single Catagory Card-->
+              <div class="col-4">
+                <div class="card catagory-card" onclick="getEmpresasCategoria('talleres')">
+                  <div class="card-body"><a href="#"><i class="lni lni-juice"></i><span>Talleres</span></a></div>
+                </div>
+              </div>
+
+              <!-- Single Catagory Card-->
+              <div class="col-4">
+                <div class="card catagory-card" onclick="getEmpresasCategoria('hoteles')">
+                  <div class="card-body"><a href="#"><i class="lni lni-basketball"></i><span>Hoteles</span></a></div>
+                </div>
+              </div>
+
+              <!-- Single Catagory Card-->
+              <div class="col-4">
+                <div class="card catagory-card"  onclick="getEmpresasCategoria('taxistas')">
+                  <div class="card-body"><a href="#"><i class="lni lni-tshirt"></i><span>Taxistas</span></a></div>
+                </div>
+              </div>
+
+              <!-- Single Catagory Card-->
+              <div class="col-4" onclick="getEmpresasCategoria('piscinas')">
+                <div class="card catagory-card">
+                  <div class="card-body"><a href="#"><i class="lni lni-island"></i><span>Piscinas</span></a></div>
+                </div>
+              </div>
 
 
-<script src="./sw.js"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Flash Sale Slide-->
+      <div class="flash-sale-wrapper" id="root">
+      
 
+      </div>
+
+      
+      <!-- Discount Coupon Card-->
+      <div class="container hidden">
+        <div class="card discount-coupon-card border-0">
+          <div class="card-body">
+            <div class="coupon-text-wrap d-flex align-items-center p-3">
+              <h5 class="text-white pr-3 mb-0">Get 20% <br> discount</h5>
+              <p class="text-white pl-3 mb-0">To get discount, enter the<strong class="px-1">GET20</strong>code on the checkout page.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+    <!-- Internet Connection Status-->
+    <div class="internet-connection-status" id="internetStatus"></div>
+    <!-- Footer Nav-->
+    <div class="footer-nav-area" id="footerNav">
+      <div class="container h-100 px-0">
+        <div class="suha-footer-nav h-100">
+          <ul class="h-100 d-flex align-items-center justify-content-between pl-0">
+            <li class="active"><a href="#"><i class="lni lni-home"></i>Inicio</a></li>
+            <li><a href="#"><i class="lni lni-life-ring"></i>Contáctanos</a></li>
+            <li><a href="#"><i class="lni lni-shopping-basket"></i>Anuncios</a></li>
+            <li><a href="#"><i class="lni lni-heart"></i>Comunidad</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- All JavaScript Files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/default/jquery.passwordstrength.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jarallax.min.js"></script>
+    <script src="js/jarallax-video.min.js"></script>
+    <script src="js/default/dark-mode-switch.js"></script>
+    <script src="js/default/no-internet.js"></script>
+    <script src="js/default/active.js"></script>
+    <script src="js/pwa.js"></script>
+
+    <script src="./index.js"></script>
     
-</body>
-
+  </body>
 </html>

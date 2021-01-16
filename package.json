@@ -1,15 +1,12 @@
 {
-  "name": "pidelofacil",
+  "name": "empresaschapinas",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "dependencies": {
     "express": "^4.17.1",
-    "mssql": "^4.3.7",
     "mysql": "^2.17.1",
-    "node-odoo": "^0.1.1",
-    "socket.io": "^2.3.0",
-    "sweetalert": "^2.1.2"
+    "socket.io": "^2.3.0"
   },
   "scripts": {
     "test": "nodemon server.js",
@@ -17,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AlexisBurgosGtm/pidelofacil.git"
+    "url": "https://github.com/AlexisBurgosGtm/empresaschapinas.git"
   },
   "author": "Alexis Burgos",
   "license": "ISC",

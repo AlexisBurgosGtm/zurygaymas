@@ -3,13 +3,13 @@ var app = express();
 var router = express.Router();
 var bodyParser = require('body-parser');
 
-const execute = require('./router/connection');
-var routerNegocios = require('./router/routerNegocios');
+//const execute = require('./router/connection');
+//var routerNegocios = require('./router/routerNegocios');
 
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
-const PORT = process.env.PORT || 333;
+const PORT = process.env.PORT || 3333;
 
 app.use(bodyParser.json());
 
@@ -39,7 +39,7 @@ app.get("/",function(req,res){
 }); 
 
 
-app.use('/negocios', routerNegocios);
+//app.use('/negocios', routerNegocios);
 
 
 app.use("/",router);
