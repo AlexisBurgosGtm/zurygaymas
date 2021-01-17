@@ -22,6 +22,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png">
     <!-- Stylesheet-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/custom.css">
+
     <!-- Web App Manifest-->
     <link rel="manifest" href="manifest.json">
   </head>
@@ -88,7 +90,7 @@
     </div>
 
     <!-- PWA Install Alert-->
-    <div class="toast pwa-install-alert shadow hidden" id="pwaInstallToast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="8000" data-autohide="true">
+    <div class="toast pwa-install-alert shadow " id="pwaInstallToast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="8000" data-autohide="true">
       <div class="toast-body">
         <button class="ml-3 close" type="button" data-dismiss="toast" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <div class="content d-flex align-items-center mb-2"><img src="img/icons/icon-72x72.png" alt="">
@@ -100,8 +102,8 @@
 
     <div class="page-content-wrapper">
       <!-- Hero Slides SLIDES PARA BANNERS DE PROPAGANDA -->
-      <div class="hero-slides owl-carousel">
-        <!-- Single Hero Slide-->
+      <div class="hero-slides owl-carousel" id="rootBanner">
+      <!--
         <div class="single-hero-slide" style="background-image: url('img/bg-img/1.jpg')">
           <div class="slide-content h-100 d-flex align-items-center">
             <div class="container">
@@ -110,7 +112,7 @@
             </div>
           </div>
         </div>
-        <!-- Single Hero Slide-->
+
         <div class="single-hero-slide" style="background-image: url('img/bg-img/2.jpg')">
           <div class="slide-content h-100 d-flex align-items-center">
             <div class="container">
@@ -119,7 +121,7 @@
             </div>
           </div>
         </div>
-        <!-- Single Hero Slide-->
+
         <div class="single-hero-slide" style="background-image: url('img/bg-img/3.jpg')">
           <div class="slide-content h-100 d-flex align-items-center">
             <div class="container">
@@ -128,21 +130,25 @@
             </div>
           </div>
         </div>
-      </div>
 
+      -->
+
+
+
+      </div>
 
       <!-- Product Catagories-->
       <div class="product-catagories-wrapper py-3">
         <div class="container">
           <div class="section-heading">
-            <h6 class="ml-1">Elija la categoría del negocio</h6>
+            <h6 class="ml-1">¿Qué tipo de negocio estás buscando?</h6>
           </div>
           <div class="product-catagory-wrap">
             <div class="row g-3">
 
               <!-- Single Catagory Card-->
               <div class="col-4">
-                <div class="card catagory-card" onclick="getEmpresasCategoria('comida')">
+                <div class="card catagory-card"  onclick="getEmpresasCategoria('comida')">
                   <div class="card-body"><a href="#"><i class="lni lni-pizza"></i><span>Comida</span></a></div>
                 </div>
               </div>
@@ -187,6 +193,7 @@
           </div>
         </div>
       </div>
+      
       <!-- Flash Sale Slide-->
       <div class="flash-sale-wrapper">
         <div class="container" id="root">
@@ -194,23 +201,17 @@
         </div>
       </div>
 
-      
-      <!-- Discount Coupon Card-->
-      <div class="container hidden">
-        <div class="card discount-coupon-card border-0">
-          <div class="card-body">
-            <div class="coupon-text-wrap d-flex align-items-center p-3">
-              <h5 class="text-white pr-3 mb-0">Get 20% <br> discount</h5>
-              <p class="text-white pl-3 mb-0">To get discount, enter the<strong class="px-1">GET20</strong>code on the checkout page.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      
+          
     </div>
+    
+
+    
+
     <!-- Internet Connection Status-->
     <div class="internet-connection-status" id="internetStatus"></div>
+    
+    
+
     <!-- Footer Nav-->
     <div class="footer-nav-area" id="footerNav">
       <div class="container h-100 px-0">
@@ -218,13 +219,16 @@
           <ul class="h-100 d-flex align-items-center justify-content-between pl-0">
             <li class="active"><a href="#"><i class="lni lni-home"></i>Inicio</a></li>
             <li><a href="#"><i class="lni lni-life-ring"></i>Contáctanos</a></li>
-            <li><a href="#"><i class="lni lni-shopping-basket"></i>Anuncios</a></li>
+            <li><a href="#"><i class="lni lni-shopping-basket"></i>Ofertas</a></li>
             <li><a href="#"><i class="lni lni-heart"></i>Comunidad</a></li>
           </ul>
         </div>
       </div>
     </div>
     <!-- All JavaScript Files-->
+    <script src="./controllers/Globals.js"></script>
+    <script src="./index.js"></script>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/waypoints.min.js"></script>
@@ -241,7 +245,12 @@
     <script src="js/default/active.js"></script>
     <script src="js/pwa.js"></script>
 
-    <script src="./index.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="./controllers/funciones.js"></script>    
+
+    <script>
+      funciones.instalationHandlers('pwaInstallToast');
+    </script>
     
   </body>
 </html>
