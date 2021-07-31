@@ -22,6 +22,9 @@ function getEmpresasCategoria(categoria){
         case 'piscinas':
             getListado('piscinas');
             break;
+        case 'sponsor':
+          $('#modalSponsor').modal('show');
+            break;
         
     };
 
@@ -34,13 +37,13 @@ function getEmpresasCategoria(categoria){
 
 function getListado(cat){
     let str = ` <div class="card shadow">
-                    <h3 class="text-info">Negocio de ${cat}</h3>
+                    <h3 class="text-success">Negocio de ${cat}</h3>
                     <div class="form-group">
-                        <label>Dirección del negocio</label>
+                        <small>Dirección del negocio</small>
                         <br>
                         <a 
                             href="https://api.whatsapp.com/send?phone=50257255092&text=Hola%20vi%20tu%20anuncio%20en%20Empresas%20Chapinas.%20com"
-                            target="_blank"
+                            target="_blank" class="negrita"
                         >Tel: 5725-5092</a>
                     </div>
                 </div>

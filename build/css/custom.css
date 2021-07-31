@@ -1,3 +1,11 @@
+.hidden {
+    visibility: hidden;
+};
+
+.negrita {
+    font-weight: bold;
+};
+
 .toppegado {
     margin-top: 0px;
   };

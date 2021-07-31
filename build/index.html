@@ -12,7 +12,7 @@
     <meta name="google" content="notranslate" />
     <!-- The above tags *must* come first in the head, any other head content must come *after* these tags-->
     <!-- Title-->
-    <title>Empresas Chapinas</title>
+    <title>NEGOCIOS-RETALHULEU</title>
     <!-- Favicon-->
     <link rel="icon" href="./faviconsmall.png">
     <!-- Apple Touch Icon-->
@@ -40,7 +40,8 @@
         <!-- Logo Wrapper-->
         <div class="logo-wrapper">
           <a href="index.html">
-            <img src="./faviconsmall.png" alt=""><label class="text-secondary b">Empresas Chapinas</label>
+            <img src="./faviconsmall.png" width="30" height="30" alt=""><label class="text-secondary b">Negocios Retalhuleu</label>
+              
           </a>
         </div>
         
@@ -53,13 +54,14 @@
     <!-- Side Nav Wrapper-->
     <div class="suha-sidenav-wrapper" id="sidenavWrapper">
       <!-- Sidenav Profile-->
-      <div class="sidenav-profile">
+      <div class="sidenav-profile hidden">
         <div class="user-profile"><img src="img/bg-img/9.jpg" alt=""></div>
 
         <div class="user-info">
           <h6 class="user-name mb-0">Suha Jannat</h6>
           <p class="available-balance">Balance <span>$<span class="counter">523.98</span></span></p>
         </div>
+
       </div>
 
       <!-- Sidenav Nav-->
@@ -85,17 +87,18 @@
         <li><a href="settings.html"><i class="lni lni-cog"></i>Settings</a></li>
         <li><a href="intro.html"><i class="lni lni-power-switch"></i>Sign Out</a></li>
       </ul>
+
       <!-- Go Back Button-->
       <div class="go-home-btn" id="goHomeBtn"><i class="lni lni-arrow-left"></i></div>
     </div>
 
     <!-- PWA Install Alert-->
-    <div class="toast pwa-install-alert shadow " id="pwaInstallToast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="8000" data-autohide="true">
+    <div class="toast pwa-install-alert shadow hand" id="pwaInstallToast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="8000" data-autohide="true">
       <div class="toast-body">
         <button class="ml-3 close" type="button" data-dismiss="toast" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <div class="content d-flex align-items-center mb-2"><img src="img/icons/icon-72x72.png" alt="">
-          <h6 class="mb-0 text-white">Add to Home Screen</h6>
-        </div><span class="mb-0 d-block text-white">Add Suha on your mobile home screen. Click the<strong class="mx-1">"Add to Home Screen"</strong>button & enjoy it like a regular app.</span>
+          <h6 class="mb-0 text-white">Instálame como aplicación</h6>
+        </div><span class="mb-0 d-block text-white">Dá click en el mensaje para agregarme como aplicación en tu dispositivo</span>
       </div>
     </div>
 
@@ -155,8 +158,9 @@
 
               <!-- Single Catagory Card-->
               <div class="col-4">
-                <div class="card catagory-card" onclick="getEmpresasCategoria('belleza')">
-                  <div class="card-body"><a href="#"><i class="lni lni-heart"></i><span>Salón Belleza</span></a></div>
+                <div class="card catagory-card" onclick="getEmpresasCategoria('sponsor')">
+                  <div class="card-body">
+                    <img src="./img/sponsor/LOGOTECNO.PNG" width="80" height="80"><span></span></a></div>
                 </div>
               </div>
 
@@ -203,6 +207,70 @@
 
           
     </div>
+
+    <!-- MODAL SPONSOR -->
+    <div id="modalSponsor" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-primary">
+            <label class="text-white">Productos Especiales Tecno System</label>
+          </div>
+          <div class="modal-body">
+              
+                <img src="./img/sponsor/LOGOTECNO.PNG" width="150" height="150">
+              
+              <div class="row">
+                <table class="table table-responsive table-striped col-12">
+                  <thead>
+                    <tr>
+                      <td></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr>
+                      <td>Audífonos para teléfonos Android</td>
+                    </tr>
+                    <tr>
+                      <td>Audífonos para teléfonos iPhone</td>
+                    </tr>
+                    <tr>
+                      <td>Audífonos para PC</td>
+                    </tr>
+                    <tr>
+                      <td>Mouse para PC en variedad de marcas</td>
+                    </tr>
+                    <tr>
+                      <td>Tintas y cartuchos para impresoras</td>
+                    </tr>
+                    <tr>
+                      <td>Variedad de Impresoras con y sin Scáner</td>
+                    </tr>
+                    <tr>
+                      <td>Equipo de computación de Escritorio y Laptop (portátil)</td>
+                    </tr>
+
+
+                  </tbody>
+                </table>
+              </div>
+
+              <a class="btn btn-success btn-lg"  href="https://api.whatsapp.com/send?phone=50246677505&text=Hola%2C%20podr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%20de%20los%20productos%20Tecno%20System">
+                <i class="lni lni-whatsapp"></i>Contactar
+              </a>
+
+
+          </div>
+          
+          <div class="modal-footer">
+            <button class="form-control btn-sm btn-round" data-dismiss="modal">
+              Cerrar Ventana
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
     
 
     
@@ -217,10 +285,10 @@
       <div class="container h-100 px-0">
         <div class="suha-footer-nav h-100">
           <ul class="h-100 d-flex align-items-center justify-content-between pl-0">
-            <li class="active"><a href="#"><i class="lni lni-home"></i>Inicio</a></li>
-            <li><a href="#"><i class="lni lni-life-ring"></i>Contáctanos</a></li>
-            <li><a href="#"><i class="lni lni-shopping-basket"></i>Ofertas</a></li>
-            <li><a href="#"><i class="lni lni-heart"></i>Comunidad</a></li>
+            <li class="active hidden"><a href="#"><i class="lni lni-home"></i>Inicio</a></li>
+            <li class="hidden"><a href="#"><i class="lni lni-life-ring"></i>Contáctanos</a></li>
+            <li class="hidden"><a href="#"><i class="lni lni-shopping-basket"></i>Ofertas</a></li>
+            <li class=""><a href="https://api.whatsapp.com/send?phone=50246677505&text=Hola%2C%20quisiera%20agregar%20mi%20negocio%20al%20directorio%20de%20negocios" id="btnAgregarNegocio"><i class="lni lni-heart"></i>Agrega mi Negocio</a></li>
           </ul>
         </div>
       </div>
