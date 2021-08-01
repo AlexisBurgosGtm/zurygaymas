@@ -1,6 +1,6 @@
 
-const staticCacheName = 'pre-cache-v1.3';
-const dynamicCacheName = 'runtime-cache-v1.3';
+const staticCacheName = 'pre-cache-v1.4';
+const dynamicCacheName = 'runtime-cache-v1.4';
 
 // Pre Caching Assets
 const precacheAssets = [
@@ -54,16 +54,10 @@ const precacheAssets = [
     'js/owl.carousel.min.js',
     'js/pwa.js',
     'js/waypoints.min.js',
-    'home.html',
-    'intro.html',
-    'login.html',
+    'index.html',
     'manifest.json',
-    'offline.html',
-    'message.html',
-    'cart.html',
-    'pages.html',
-    'settings.html',
-    'style.css'
+    'style.css',
+    'negocios.js'
 ];
 
 // INSTALL Event
@@ -89,7 +83,7 @@ self.addEventListener('activate', function (event) {
 
 // FETCH Event
 self.addEventListener('fetch', function (event) {
-    return;
+    //return;
 
     event.respondWith(
         caches.match(event.request).then(cacheRes => {

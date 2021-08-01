@@ -4,14 +4,14 @@ function getEmpresasCategoria(categoria){
 
     switch (categoria) {
         case 'comida':
-            getListado('comida');
+            getListado('COMIDA');
             break;
             
         case 'belleza':
             getListado('belleza');
             break;
         case 'talleres':
-            getListado('talleres');
+            getListado('TALLER');
             break;
         case 'hoteles':
             getListado('hoteles');
@@ -36,24 +36,49 @@ function getEmpresasCategoria(categoria){
 };
 
 function getListado(cat){
-    let str = ` <div class="card shadow">
-                    <h3 class="text-success">Negocio de ${cat}</h3>
-                    <div class="form-group">
-                        <small>Dirección del negocio</small>
-                        <br>
-                        <a 
-                            href="https://api.whatsapp.com/send?phone=50257255092&text=Hola%20vi%20tu%20anuncio%20en%20Empresas%20Chapinas.%20com"
-                            target="_blank" class="negrita"
-                        >Tel: 5725-5092</a>
-                    </div>
-                </div>
-                <br>`
 
     let root = document.getElementById('root');
     root.innerHTML = GlobalLoader;
 
-    root.innerHTML = '<br><br><br>' + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str
+
+    let datos = '';
+
+    negocios.map((rs)=>{
+      if(rs.tipo==cat){
+          datos = datos + plantillaCard(rs.negocio,rs.direccion,rs.descripcion,rs.telefono,cat);
+      }
+    })
+
+    root.innerHTML = datos;
+
 };
+
+function plantillaCard(negocio,direccion,descripcion,telefono,categoria){
+  let str = ` <br>
+              <div class="card shadow col-12">
+                <h4 class="text-danger">${negocio}</h4>
+                <div class="form-group">
+                    <small>${direccion}</small>
+                    <br>
+                    <small>${descripcion}</small>
+                    <div class="row">
+                      <div class="col-6">
+                        <a 
+                          href="https://api.whatsapp.com/send?phone=502${telefono}&text=Hola%20vi%20tu%20anuncio%20en%20Negocios%20Retalhuleu"
+                          target="_blank" class="negrita"
+                          >Tel: ${telefono}</a>
+                      </div>
+                      <div class="col-6">
+                        <small class="bg-info text-white">${categoria}</small>
+                      </div>
+                    </div>
+                    
+                </div>
+              </div>
+              <br>`
+  return str;
+}
+
 
 function getBanner(){
 
