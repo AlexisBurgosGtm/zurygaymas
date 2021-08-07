@@ -173,7 +173,7 @@ textarea:invalid {
 
 @media only screen and (min-width: 1200px) {
   .container {
-    max-width: 940px; } }
+    max-width: 1200px; } }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .container {
@@ -308,6 +308,7 @@ textarea:invalid {
 
 .text-dark {
   color: #020310 !important; }
+
 
 .section-heading {
   position: relative;

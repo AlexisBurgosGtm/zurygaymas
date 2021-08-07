@@ -6,6 +6,14 @@
     font-weight: bold;
 };
 
+.burgos {
+    color: blueviolet;
+}
+
+.text-burgos {
+    color:darkorchid;
+    font-family:cursive }
+
 .toppegado {
     margin-top: 0px;
   };

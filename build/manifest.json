@@ -3,7 +3,7 @@
   "short_name": "Negocios-Reu",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#100DD1",
+  "background_color": "#ffffff",
   "theme_color": "#100DD1",
   "categories": ["shop", "ecommerce", "fashion"],
   "orientation": "portrait",

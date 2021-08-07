@@ -49,12 +49,12 @@ function getListado(cat){
       }
     })
 
-    root.innerHTML = datos;
+    root.innerHTML = '<br>' + datos + '<br>';
 
 };
 
 function plantillaCard(negocio,direccion,descripcion,telefono,categoria){
-  let str = ` <br>
+  let str = `<br>
               <div class="card shadow col-12">
                 <h4 class="text-danger">${negocio}</h4>
                 <div class="form-group">
@@ -75,7 +75,7 @@ function plantillaCard(negocio,direccion,descripcion,telefono,categoria){
                     
                 </div>
               </div>
-              <br>`
+              `
   return str;
 }
 
