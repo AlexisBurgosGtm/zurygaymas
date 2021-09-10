@@ -1,32 +1,7 @@
 function getEmpresasCategoria(categoria){
     
     location.hash = "#";
-
-    switch (categoria) {
-        case 'comida':
-            getListado('COMIDA');
-            break;
-            
-        case 'belleza':
-            getListado('belleza');
-            break;
-        case 'talleres':
-            getListado('TALLER');
-            break;
-        case 'hoteles':
-            getListado('hoteles');
-            break;
-        case 'taxistas':
-            getListado('taxistas');
-            break;
-        case 'piscinas':
-            getListado('piscinas');
-            break;
-        case 'sponsor':
-          $('#modalSponsor').modal('show');
-            break;
-        
-    };
+   
 
     var tiempo = tiempo || 1000;
     $("html, body").animate({ scrollTop: $("#root").offset().top }, tiempo);
@@ -35,51 +10,39 @@ function getEmpresasCategoria(categoria){
     
 };
 
-function getListado(cat){
 
-    let root = document.getElementById('root');
-    root.innerHTML = GlobalLoader;
-
-
-    let datos = '';
-
-    negocios.map((rs)=>{
-      if(rs.tipo==cat){
-          datos = datos + plantillaCard(rs.negocio,rs.direccion,rs.descripcion,rs.telefono,cat);
-      }
-    })
-
-    root.innerHTML = '<br>' + datos + '<br>';
-
-};
-
-function plantillaCard(negocio,direccion,descripcion,telefono,categoria){
-  let str = `<br>
-              <div class="card shadow col-12">
-                <h4 class="text-danger">${negocio}</h4>
-                <div class="form-group">
-                    <small>${direccion}</small>
-                    <br>
-                    <small>${descripcion}</small>
-                    <div class="row">
-                      <div class="col-6">
-                        <a 
-                          href="https://api.whatsapp.com/send?phone=502${telefono}&text=Hola%20vi%20tu%20anuncio%20en%20Negocios%20Retalhuleu"
-                          target="_blank" class="negrita"
-                          >Tel: ${telefono}</a>
-                      </div>
-                      <div class="col-6">
-                        <small class="bg-info text-white">${categoria}</small>
-                      </div>
-                    </div>
-                    
-                </div>
+function getPlantillaProducto(nombre,imagen,precio){
+  return `
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="card product-card">
+              <div class="card-body">
+                <span class="badge rounded-pill badge-success">Nuevo</span>
+                <a class="product-thumbnail d-block" href="#">
+                  <img class="mb-2" src="img/product/${imagen}" alt="">
+                </a>
+                <a class="product-title d-block text-success" href="#">${nombre}</a>
+                <p class="sale-price">Desde <b>Q ${precio}</b></p>
+                <a class="btn btn-success btn-sm" href="#"><i class="lni lni-whatsapp" href="https://api.whatsapp.com/send?phone=50230090668&text=Hola%2C%20quisiera%20informacion%20de%20${replaceSpaces(nombre)}"></i>Pedir</a>
               </div>
-              `
-  return str;
+            </div>
+          </div>
+  `
+
+  
 }
 
+function getNuevos(){
+  let str = "";
+  negocios.map((r)=>{
+    str += getPlantillaProducto(r.nombre,r.imagen,r.precio)
+  })
 
+  root.innerHTML =  str;
+}
+
+function replaceSpaces(text){
+  return text.replace(' ','%20');
+}
 function getBanner(){
 
     let str = `
@@ -119,3 +82,4 @@ function getBanner(){
 
 getBanner();
 
+getNuevos();

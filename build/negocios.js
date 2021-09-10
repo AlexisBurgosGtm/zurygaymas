@@ -1,80 +1,63 @@
 let negocios = [
     {
-        negocio:"NOMBRE DEL NEGOCIO",
-        direccion:"DIRECCION DEL NEGOCIO",
-        telefono:"55555-55555",
-        descripcion:"BEBIDAS, COMIDAS, VARIOS",
-        tipo:"COMIDA"
+       nombre:"vincha",
+       precio:"10.00",
+       imagen:"1.jpeg"
     },
     {
-        negocio:"NOMBRE DEL NEGOCIO",
-        direccion:"DIRECCION DEL NEGOCIO",
-        telefono:"55555-55555",
-        descripcion:"BEBIDAS, COMIDAS, VARIOS",
-        tipo:"COMIDA"
-    },
-    {
-        negocio:"NOMBRE DEL NEGOCIO",
-        direccion:"DIRECCION DEL NEGOCIO",
-        telefono:"55555-55555",
-        descripcion:"BEBIDAS, COMIDAS, VARIOS",
-        tipo:"COMIDA"
-    },
-    {
-        negocio:"NOMBRE DEL NEGOCIO",
-        direccion:"DIRECCION DEL NEGOCIO",
-        telefono:"55555-55555",
-        descripcion:"BEBIDAS, COMIDAS, VARIOS",
-        tipo:"COMIDA"
-    },
-    {
-        negocio:"NOMBRE DEL NEGOCIO",
-        direccion:"DIRECCION DEL NEGOCIO",
-        telefono:"55555-55555",
-        descripcion:"BEBIDAS, COMIDAS, VARIOS",
-        tipo:"COMIDA"
-    },
-    {
-        negocio:"NOMBRE DEL NEGOCIO",
-        direccion:"DIRECCION DEL NEGOCIO",
-        telefono:"55555-55555",
-        descripcion:"BEBIDAS, COMIDAS, VARIOS",
-        tipo:"COMIDA"
-    },
-    {
-        negocio:"NOMBRE DEL TALLER",
-        direccion:"DIRECCION DEL NEGOCIO",
-        telefono:"55555-55555",
-        descripcion:"BEBIDAS, COMIDAS, VARIOS",
-        tipo:"TALLER"
-    },
-    {
-        negocio:"NOMBRE DEL TALLER",
-        direccion:"DIRECCION DEL NEGOCIO",
-        telefono:"55555-55555",
-        descripcion:"BEBIDAS, COMIDAS, VARIOS",
-        tipo:"TALLER"
-    },
-    {
-        negocio:"NOMBRE DEL TALLER",
-        direccion:"DIRECCION DEL NEGOCIO",
-        telefono:"55555-55555",
-        descripcion:"BEBIDAS, COMIDAS, VARIOS",
-        tipo:"TALLER"
-    },
-    {
-        negocio:"NOMBRE DEL TALLER",
-        direccion:"DIRECCION DEL NEGOCIO",
-        telefono:"55555-55555",
-        descripcion:"BEBIDAS, COMIDAS, VARIOS",
-        tipo:"TALLER"
-    },
-    {
-        negocio:"NOMBRE DEL TALLER",
-        direccion:"DIRECCION DEL NEGOCIO",
-        telefono:"55555-55555",
-        descripcion:"BEBIDAS, COMIDAS, VARIOS",
-        tipo:"TALLER"
-    },
+        nombre:"gancho",
+        precio:"10.00",
+        imagen:"2.jpeg"
+     },
+     {
+        nombre:"gorro",
+        precio:"20.00",
+        imagen:"3.jpeg"
+     },
+     {
+        nombre:"vincha",
+        precio:"10.00",
+        imagen:"4.jpeg"
+     },
+     {
+         nombre:"gancho",
+         precio:"10.00",
+         imagen:"5.jpeg"
+      },
+      {
+         nombre:"gorro",
+         precio:"20.00",
+         imagen:"6.jpeg"
+      },
+      {
+        nombre:"vincha",
+        precio:"10.00",
+        imagen:"7.jpeg"
+     },
+     {
+         nombre:"gancho",
+         precio:"10.00",
+         imagen:"8.jpeg"
+      },
+      {
+         nombre:"gorro",
+         precio:"20.00",
+         imagen:"9.jpeg"
+      },
+      {
+        nombre:"vincha",
+        precio:"10.00",
+        imagen:"10.jpeg"
+     },
+     {
+         nombre:"gancho",
+         precio:"10.00",
+         imagen:"11.jpeg"
+      },
+      {
+         nombre:"gorro",
+         precio:"20.00",
+         imagen:"12.jpeg"
+      },
   
 ];
